@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,17 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horacio Garza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD7-p6-6uV">
-                                <rect key="frame" x="84" y="331" width="247" height="73"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HGarz Studios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD7-p6-6uV">
+                                <rect key="frame" x="96.5" y="334.5" width="222.5" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xD7-p6-6uV" secondAttribute="height" multiplier="247:73" id="ETK-r1-ftp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="35"/>
                                 <color key="textColor" red="1" green="0.55982592281879195" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Strooper-Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a8v-dH-FS9">
-                                <rect key="frame" x="88" y="69" width="238" height="235"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strooper-Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a8v-dH-FS9">
+                                <rect key="frame" x="86" y="69" width="242" height="238.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a8v-dH-FS9" secondAttribute="height" multiplier="238:235" id="ucq-LZ-3Kb"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a8v-dH-FS9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="49" id="6FP-5K-V7q"/>
+                            <constraint firstItem="xD7-p6-6uV" firstAttribute="top" secondItem="a8v-dH-FS9" secondAttribute="bottom" constant="27" id="Arg-6S-PPr"/>
+                            <constraint firstItem="xD7-p6-6uV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IQ7-uS-zSJ"/>
+                            <constraint firstItem="a8v-dH-FS9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ri8-gQ-0Mh"/>
+                            <constraint firstItem="xD7-p6-6uV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ooQ-Pl-E6i"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
