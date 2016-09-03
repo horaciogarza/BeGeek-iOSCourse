@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import KVNProgress
+import Alamofire
+import SwiftyJSON
 
 
 class CitiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
@@ -18,6 +21,9 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        KVNProgress.showErrorWithStatus("Listo prro")
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

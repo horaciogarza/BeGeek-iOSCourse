@@ -29,7 +29,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate{
         locationManager.requestWhenInUseAuthorization()
         
         
-        
         if (CLLocationManager.locationServicesEnabled())
         {
             locationManager.delegate = self
